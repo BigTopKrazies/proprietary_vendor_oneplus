@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_wechat_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_3a_wechat_preview.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_isp_zsl_snapshot.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_preview_1080p_cpp.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \

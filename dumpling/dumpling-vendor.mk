@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_ca.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libgoodixfingerprintd_binder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgoodixfingerprintd_binder.so \
+    vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
