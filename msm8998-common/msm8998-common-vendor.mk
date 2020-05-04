@@ -19,19 +19,19 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/firmware/mbn_ota/mbn_ota.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/mbn_ota/mbn_ota.txt \
+    vendor/oneplus/msm8998-common/proprietary/etc/firmware/tp/fw_synaptics_16859.img:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/tp/fw_synaptics_16859.img \
+    vendor/oneplus/msm8998-common/proprietary/etc/firmware/tp/fw_synaptics_17801.img:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/tp/fw_synaptics_17801.img \
     vendor/oneplus/msm8998-common/proprietary/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
     vendor/oneplus/msm8998-common/proprietary/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.nxp.nfc.xml \
     vendor/oneplus/msm8998-common/proprietary/lib/libnxpnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnxpnfc-nci.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libnxpnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnxpnfc_nci_jni.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.oneplus.camera.CameraHIDL@1.0.so \
-    vendor/oneplus/msm8998-common/proprietary/lib/vendor.oneplus.hardware.ifaa@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.oneplus.hardware.ifaa@2.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.oneplus.hardware.param@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.oneplus.hardware.param@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libnxpnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnxpnfc-nci.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libnxpnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnxpnfc_nci_jni.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so \
-    vendor/oneplus/msm8998-common/proprietary/lib64/vendor.oneplus.hardware.ifaa@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.oneplus.hardware.ifaa@2.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.oneplus.hardware.param@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.oneplus.hardware.param@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.esepowermanager@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.esepowermanager@1.0.so \
@@ -121,7 +121,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     NxpNfcNci \
     NxpSecureElement \
-    IFAAService \
     com.nxp.nfc \
     vendor.oneplus.camera.CameraHIDL-V1.0-java \
     vendor.oneplus.hardware.param-V1.0-java
@@ -258,7 +257,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar \
     vendor/oneplus/msm8998-common/proprietary/product/framework/vendor.qti.latency-V2.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.latency-V2.0-java.jar \
     vendor/oneplus/msm8998-common/proprietary/product/framework/vendor.qti.voiceprint-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.voiceprint-V1.0-java.jar \
-    vendor/oneplus/msm8998-common/proprietary/product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
@@ -306,7 +304,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/product/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.latency@2.0.so \
-    vendor/oneplus/msm8998-common/proprietary/product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
@@ -525,7 +522,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/framework/com.fingerprints.extension.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.fingerprints.extension.jar \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.0.so \
