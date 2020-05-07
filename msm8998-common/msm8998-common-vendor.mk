@@ -27,11 +27,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib/libnxpnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnxpnfc_nci_jni.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.oneplus.camera.CameraHIDL@1.0.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/vendor.oneplus.hardware.ifaa@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.oneplus.hardware.ifaa@2.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.oneplus.hardware.param@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.oneplus.hardware.param@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libnxpnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnxpnfc-nci.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libnxpnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnxpnfc_nci_jni.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/vendor.oneplus.hardware.ifaa@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.oneplus.hardware.ifaa@2.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.oneplus.hardware.param@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.oneplus.hardware.param@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.esepowermanager@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/product/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.esepowermanager@1.0.so \
@@ -121,6 +123,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     NxpNfcNci \
     NxpSecureElement \
+    IFAAService \
     com.nxp.nfc \
     vendor.oneplus.camera.CameraHIDL-V1.0-java \
     vendor.oneplus.hardware.param-V1.0-java
